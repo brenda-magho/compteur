@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(78, 189, 78);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.compteur{
+    width: 40%;
+    height: 200px;
+    background: #fff;
+    border-radius: 5px;
+}
+.compteur_top{
+    width: 90%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    margin: 20px auto 5px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+}
+.compteur_bottom{
+    height: 70px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 5px;
+    /* position: relative; */
+}
+.btn_start,.btn_stop,.btn_reset{
+    /* position: absolute; */
+    /* top: 0; */
+    width: 32.5%;
+    height: 40px;
+    color: #fff;
+    background: rgb(58, 141, 58);
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+.btn_start:hover,.btn_stop:hover,.btn_reset:hover{
+    background: rgb(48, 116, 48);
+    color: #e4e1e1;
+    transform: scale(0.9);
+    transition: 0.5s;
+
+}
+.compteur_top span{
+    font-size: 50px;
+    color: rgb(58, 141, 58);
+    margin: 0 2px;
+    padding: 0 2px;
+}
+
+@media only screen and (max-width: 568px) {
+    .compteur{
+        width: 90%;
+        height: 280px;
+    }
+    .compteur_top span{
+        font-size: 25px;
+    }
+    .compteur_bottom{
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn_start,.btn_stop,.btn_reset{
+        width: 100%;
+        margin: 5px 0;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .compteur{
+        width: 65%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .compteur{
+        width: 45%;
+    }
+}
